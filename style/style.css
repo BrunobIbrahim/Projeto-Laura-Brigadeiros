@@ -82,12 +82,13 @@ header{
     padding: 20px 40px;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .logo{
    width: 8%;
    height: auto;
+   position: relative;
 }
 
 nav{
@@ -95,7 +96,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    width: 60%;
+    width: 70%;
+    margin-left: 12%;
 }
 
 nav p{
