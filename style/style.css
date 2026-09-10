@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-destaque: #9aeaf5;
+    --cor-base: #333;
+    --cor-fundo: #f3f1f2;
+}
+
+/*estilização Geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--cor-base);
+}
+
+h1{
+    font-size: 48px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 34px;
+    font-family: "Allura", cursive;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+h5{
+    font-size: 20px;
+    font-family: "Allura", cursive;
+    font-weight: 400;
+
+}
+
+p{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+hr{
+    background-color: var(--cor-destaque);
+    height: 4px;
+    border: none;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 35px;
+}
+
+/* icone whatsapp */
+
+.icone-whats{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.icone-whats img{
+    width: 80px;
+    height: 80px;
+}
+
+/* Cabeçalho */
+
+header{
+    background-color: #f5f5f5;
+    padding: 20px 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+   width: 8%;
+   height: auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 60%;
+}
+
+nav p{
+    margin-right: 25px;
+}
+
+nav img{
+    width: 15%;
+    height: auto;
+    margin-right: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+nav span{
+    font-weight: 500;
+    border-bottom: 2px solid var(--cor-base);
+}
+
+nav a:active{
+    color: #333;
+}
+
+/* sobre */
+
+.sobre{
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    padding: 15px;
+    background-color: var(--cor-destaque);
+}
+
+.sobre h1 , .sobre h2{
+    margin-bottom: 20px;
+}
+
+.sobre p{
+    font-size: 18px;
+}
+
+.sobre-textos{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.sobre-textos p{
+    margin: 15px 0px;
+}
+
+
+/* Produtos */
+
+.produtos{
+    text-align: center;
+    padding-top: 45px;
+    background-color: var(--cor-fundo);
+}
+
+.produtos h1{
+    margin-bottom: 20px;
+
+}
+
+.produtos p{
+    margin-bottom: 20px;
+}
+
+.produtos h2{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.tamanhos h3{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.tamanhos-centos{
+    font-size: 19px;
+}
+
+.tamanhos span{
+    font-weight: bold;
+}
+
+.categorias-sabores{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 60%;
+    height: auto;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.categoria{
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+.categoria h3{
+    font-size: 25px;
+}
+
+.categoria:nth-child(even)::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 15px;
+    bottom: 15px;
+
+    width: 4px;
+    background: var(--cor-destaque);
+}
+
+.categoria:nth-child(n+3)::after {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 15px;
+    right: 15px;
+
+    height: 4px;
+    background: var(--cor-destaque);
+}
+
+.precos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.quindim{
+    margin-top: 38px;
+}
+
+.quindim h3{
+    margin: 20px auto 15px auto;
+    text-transform: uppercase;
+
+}
+
+.precos-quindim {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 35px;
+    padding-top: 25px;
+}
+
+.precos-quindim::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 15%;
+    right: 15%;
+
+    height: 4px;
+    background: var(--cor-destaque);
+}
+
+/* Cardápio Especial */
+
+.cardapio-especial{
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px auto;
+    background-color: var(--cor-destaque);
+}
+
+.cardapio-especial h1{
+    padding-top: 35px;
+}
+
+.cardapio-cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0px auto;
+    padding: 15px auto;
+    
+}
+
+.cardapio-cards h3{
+    font-size: 26px;
+}
+
+.cardapio-cards h5{
+    font-size: 28px;
+}
+
+.cardapio-cards p{
+    font-size: 18px;
+}
+
+.eventos , .datas-comemorativas{
+    margin: 35px 5px;
+    padding: 15px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted var(--cor-base);
+
+}
+
+.eventos-img, .festividades-img{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    width: 90%;
+}
+
+.eventos-img img, .festividades-img img{
+    width: 45%;
+    height: auto;
+}
+
+
+/* Contato */
+
+.contato{
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    padding: 25px;
+    background-color: var(--cor-fundo);
+}
+
+.contato h5{
+    font-size: 28px;
+}
+
+.contato p{
+    margin: 15px auto;
+    font-size: 18px;
+
+}
+
+.contato .lista{
+    margin: 25px auto;
+    font-size: 24px;
+}
+
+.contato .lista h5{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contato .lista a{
+    text-decoration: none;
+    border: 0.5px solid var(--cor-destaque);
+    padding: 12px;
+    border-radius: 25px;
+
+}
+
+.entrega-card-title p{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.entrega-info{
+    width: 80%;
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.entrega-info .entrega-text{
+    margin: 35px 35px 20px 10px;
+    width: 80%;
+    
+}
+.entrega-info .entrega-text p{
+    font-size: 20px;
+}
+
+.entrega-info .mapa{
+    width: 100%;
+    height: auto;
+}
+
+.entrega-info iframe{
+    width: 100%;
+    height: 400px;
+
+}
+
+
+/* footer */
+
+footer{
+    background-color: var(--cor-destaque);
+    text-align: center;
+    
+}
+
+footer p{
+    font-size: 14px;
+    color: var(--cor-fundo);
+}
