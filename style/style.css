@@ -3,11 +3,13 @@
 :root{
     --cor-destaque: #9aeaf5;
     --cor-base: #333;
-    --cor-fundo: #f3f1f2;
+    --cor-fundo: #F4EEE6;
 }
 
 /*estilização Geral*/
-
+html{
+    font-size: 16px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -16,39 +18,39 @@
 }
 
 h1{
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
 }
 
 h2{
-    font-size: 34px;
+    font-size: 2.125rem;
     font-family: "Allura", cursive;
     font-weight: 400;
 }
 
 h3{
-    font-size: 22px;
+    font-size: 1.375rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
 
 h4{
-    font-size: 17px;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     margin-bottom: 8px;
 }
 
 h5{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Allura", cursive;
     font-weight: 400;
 
 }
 
 p{
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -65,28 +67,29 @@ hr{
 
 .icone-whats{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 1.25rem;
+    right: 0.8rem;
     z-index: 1000;
 }
 
 .icone-whats img{
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
 }
 
 /* Cabeçalho */
 
 header{
-    background-color: #f5f5f5;
-    padding: 20px 40px;
+    background-color: var(--cor-fundo);
+    padding: 1.25rem 2.5rem;
     text-align: center;
+    height: 6.25rem;
     display: flex;
     justify-content: center;
 }
 
 .logo{
-   width: 8%;
+   width: 150px;
    height: auto;
    position: relative;
 }
@@ -101,11 +104,11 @@ nav{
 }
 
 nav p{
-    margin-right: 25px;
+    margin-right: 0.75rem;
 }
 
 nav img{
-    width: 15%;
+    width: 1.25rem;
     height: auto;
     margin-right: 5px;
 }
@@ -114,7 +117,7 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    font-size: 17px;
+    font-size: 1rem;
 }
 
 nav span{
@@ -132,16 +135,34 @@ nav a:active{
     text-align: center;
     width: 100%;
     margin: 0px auto;
-    padding: 15px;
-    background-color: var(--cor-destaque);
+    padding: 1rem auto;
+    background-image: linear-gradient(rgba(40,40,40,0.6),rgba(40,40,40,0.6)),url("../assets/brig2.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+}
+.sobre-info{
+    width: 50%;
+    height: auto;
+}
+
+.sobre-img{
+    width: 40%;
+    height: auto;
 }
 
 .sobre h1 , .sobre h2{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    color: var(--cor-fundo);
 }
 
 .sobre p{
-    font-size: 18px;
+    font-size: 1.125rem;
+    color: var(--cor-fundo);
 }
 
 .sobre-textos{
@@ -150,30 +171,37 @@ nav a:active{
 }
 
 .sobre-textos p{
-    margin: 15px 0px;
+    margin: 1rem 0px;
 }
+
+.sobre-img img{
+    width: 100%;
+    height: auto;
+}
+
+
 
 
 /* Produtos */
 
 .produtos{
     text-align: center;
-    padding-top: 45px;
+    padding-top: 2.8125rem;
     background-color: var(--cor-fundo);
 }
 
 .produtos h1{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 
 }
 
 .produtos p{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .produtos h2{
-    font-size: 36px;
-    margin-bottom: 15px;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
 }
 
 .tamanhos h3{
@@ -187,16 +215,19 @@ nav a:active{
 
 .tamanhos span{
     font-weight: bold;
+    font-family: "Allura", cursive;
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
 }
 
 .categorias-sabores{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     flex-wrap: wrap;
     width: 60%;
     height: auto;
-    margin: 15px auto;
+    margin: 1rem auto;
     padding: 10px;
 }
 
@@ -210,7 +241,7 @@ nav a:active{
 }
 
 .categoria h3{
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 .categoria:nth-child(even)::before {
@@ -218,8 +249,8 @@ nav a:active{
     position: absolute;
 
     left: 0;
-    top: 15px;
-    bottom: 15px;
+    top: 1rem;
+    bottom: 1rem;
 
     width: 4px;
     background: var(--cor-destaque);
@@ -230,8 +261,8 @@ nav a:active{
     position: absolute;
 
     top: 0;
-    left: 15px;
-    right: 15px;
+    left: 1rem;
+    right: 1rem;
 
     height: 4px;
     background: var(--cor-destaque);
@@ -240,15 +271,16 @@ nav a:active{
 .precos{
     display: flex;
     justify-content: space-evenly;
-    padding: 25px;
+    padding: 1.5625rem;
 }
 
 .quindim{
-    margin-top: 38px;
+    margin-top: 2.25rem;
+    padding-bottom: 2.25rem;
 }
 
 .quindim h3{
-    margin: 20px auto 15px auto;
+    margin: 1.25rem auto 1rem auto;
     text-transform: uppercase;
 
 }
@@ -258,9 +290,9 @@ nav a:active{
     justify-content: space-evenly;
     position: relative;
     margin-top: 35px;
-    padding-top: 25px;
+    padding-top: 1.5625rem;
 }
-
+/*
 .precos-quindim::before {
     content: "";
     position: absolute;
@@ -270,6 +302,16 @@ nav a:active{
     right: 15%;
 
     height: 4px;
+    background: var(--cor-destaque);
+}*/
+
+.precos-quindim::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 5px;
+    left: 50%;
+    width: 4px;
     background: var(--cor-destaque);
 }
 
@@ -292,7 +334,7 @@ nav a:active{
     justify-content: space-evenly;
     width: 100%;
     margin: 0px auto;
-    padding: 15px auto;
+    padding: 1rem auto;
     
 }
 
@@ -301,16 +343,16 @@ nav a:active{
 }
 
 .cardapio-cards h5{
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .cardapio-cards p{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .eventos , .datas-comemorativas{
-    margin: 35px 5px;
-    padding: 15px;
+    margin: 35px 0.3125rem;
+    padding: 1rem;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -323,7 +365,7 @@ nav a:active{
 .eventos-img, .festividades-img{
     display: flex;
     justify-content: space-between;
-    margin: 15px auto;
+    margin: 1rem auto;
     width: 90%;
 }
 
@@ -339,40 +381,80 @@ nav a:active{
     text-align: center;
     width: 100%;
     margin: 0px auto;
-    padding: 25px;
+    padding: 1.5625rem;
     background-color: var(--cor-fundo);
 }
 
+.contato-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem 2rem;
+    flex-direction: row-reverse;
+}
+
+.contato-info{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contato-info-img img{
+    height: 40rem;
+    width: auto;
+}
+
 .contato h5{
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .contato p{
-    margin: 15px auto;
-    font-size: 18px;
+    margin: 1rem auto;
+    font-size: 1.125rem;
 
 }
 
 .contato .lista{
-    margin: 25px auto;
-    font-size: 24px;
+    margin: 1.5625rem auto;
+    font-size: 1.5rem;
+}
+
+.lista ul{
+    list-style: none;
 }
 
 .contato .lista h5{
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 1.75rem;
+    margin-bottom: 0.625rem;
 }
 
 .contato .lista a{
     text-decoration: none;
-    border: 0.5px solid var(--cor-destaque);
-    padding: 12px;
-    border-radius: 25px;
+    border: 2px solid var(--cor-destaque);
+    padding: 0.75rem;
+    border-radius: 1.5625rem;
 
 }
 
+.entrega-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.card-info{
+    width: 45%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .entrega-card-title p{
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 0px;
 }
 
@@ -387,12 +469,12 @@ nav a:active{
 }
 
 .entrega-info .entrega-text{
-    margin: 35px 35px 20px 10px;
+    margin: 35px 35px 1.25rem 10px;
     width: 80%;
     
 }
 .entrega-info .entrega-text p{
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .entrega-info .mapa{
