@@ -6,7 +6,7 @@
 
 ## 📚 Sobre o projeto
 
-Este projeto está sendo desenvolvido para a **Laura Brigadeiros**, sendo meu primeiro projeto criado para uma empresa real.
+Este projeto está sendo desenvolvido para a **Laura Brigadeiros**, como uma experiência prática de desenvolvimento web criado para uma empresa real.
 
 O objetivo é desenvolver um site para apresentar a marca, seus produtos, sabores, tamanhos, preços e formas de contato com os clientes.
 
